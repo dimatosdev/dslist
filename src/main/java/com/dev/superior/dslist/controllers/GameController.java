@@ -1,7 +1,7 @@
 package com.dev.superior.dslist.controllers;
 
 import com.dev.superior.dslist.dto.GameDTO;
-import com.dev.superior.dslist.dto.GameMiniDTO;
+import com.dev.superior.dslist.dto.GameMinDTO;
 import com.dev.superior.dslist.entities.Game;
 import com.dev.superior.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class GameController {
     }
 
     @GetMapping
-    public List<GameMiniDTO> findAll() {
+    public List<GameMinDTO> findAll() {
         return gameService.findAll();
     }
 
